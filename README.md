@@ -25,6 +25,100 @@ This system provides a **contactless, secure, and scalable solution** for automa
 
 ---
 
+---
+
+# 🏗 System Architecture
+
+The system follows a modular pipeline combining computer vision, deep learning inference, and backend processing.
+
+```
+            ┌──────────────────────┐
+            │      Web Camera      │
+            └──────────┬───────────┘
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │  Face Detection      │
+            │      (OpenCV)        │
+            └──────────┬───────────┘
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │ Feature Extraction   │
+            │   (InsightFace)      │
+            └──────────┬───────────┘
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │ Embedding Comparison │
+            │   (Face Matching)    │
+            └──────────┬───────────┘
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │ Attendance Logging   │
+            │   (Flask Backend)    │
+            └──────────┬───────────┘
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │ Attendance Records   │
+            │ (CSV / Structured)   │
+            └──────────────────────┘
+```
+
+---
+
+# 🎥 Demo
+
+Below is a demonstration of the real-time facial recognition attendance system.
+
+> *(You can replace this with your actual demo GIF or video)*
+
+<p align="center">
+<img src="demo/demo.gif" width="700">
+</p>
+
+To add your demo:
+
+1️⃣ Record your screen while using the system  
+2️⃣ Convert it to GIF (using **ScreenToGif / OBS / Kap**)  
+3️⃣ Save it in a folder:
+
+```
+demo/demo.gif
+```
+
+---
+
+# 📊 Performance Metrics
+
+The system is designed for **fast and accurate facial recognition** using optimized deep learning inference.
+
+| Metric | Description |
+|------|-------------|
+| **Model** | InsightFace (Buffalo Model) |
+| **Inference Engine** | ONNX Runtime |
+| **Face Detection** | OpenCV |
+| **Recognition Type** | Embedding similarity comparison |
+| **Processing** | Real-time webcam frame processing |
+
+### Performance Characteristics
+
+- ⚡ Fast inference using **ONNX Runtime optimization**
+- 🎯 High recognition accuracy using **deep facial embeddings**
+- 🧠 Efficient embedding comparison for identity verification
+- 🔄 Real-time frame processing for continuous attendance tracking
+
+---
+
+# 🔐 Security Considerations
+
+- Face embeddings are stored instead of raw facial images
+- Recognition based on **vector similarity matching**
+- Supports integration with **secure authentication systems**
+- Can be extended with **access control and role-based authentication**
+
 # 🧠 Core Features
 
 - 🎥 **Real-time facial detection** using webcam video streams  
