@@ -69,28 +69,6 @@ The system follows a modular pipeline combining computer vision, deep learning i
 
 ---
 
-# 🎥 Demo
-
-Below is a demonstration of the real-time facial recognition attendance system.
-
-> *(You can replace this with your actual demo GIF or video)*
-
-<p align="center">
-<img src="demo/demo.gif" width="700">
-</p>
-
-To add your demo:
-
-1️⃣ Record your screen while using the system  
-2️⃣ Convert it to GIF (using **ScreenToGif / OBS / Kap**)  
-3️⃣ Save it in a folder:
-
-```
-demo/demo.gif
-```
-
----
-
 # 📊 Performance Metrics
 
 The system is designed for **fast and accurate facial recognition** using optimized deep learning inference.
